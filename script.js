@@ -25,7 +25,7 @@ var params = QueryString();
 if (params.inputName == undefined) {
     $("#name").text('Joke for Chuck Noriss');
     $.ajax({
-        url: 'http://api.icndb.com/jokes/random?limitTo=[nerdy]&escape=javascript',
+        url: 'https://api.icndb.com/jokes/random?limitTo=[nerdy]&escape=javascript',
         type: 'GET',
         success: function(response) { $("#joke").text(response.value.joke); }
     });
