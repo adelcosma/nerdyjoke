@@ -32,7 +32,7 @@ if (params.inputName == undefined) {
 } else {
   $("#name").text('Joke for ' + params.inputName.replace('+',' '));
   $.ajax({
-      url: 'http://api.icndb.com/jokes/random?firstName='+params.inputName+'&lastName=&limitTo=[nerdy]&escape=javascript',
+      url: 'https://api.icndb.com/jokes/random?firstName='+params.inputName+'&lastName=&limitTo=[nerdy]&escape=javascript',
       type: 'GET',
       success: function(response) { $("#joke").text(response.value.joke); }
   });
