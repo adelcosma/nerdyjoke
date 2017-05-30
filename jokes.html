@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Personalized Jokes</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73425693-3', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=950459285003496";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+    <div class="container">
+      <div class="header clearfix">
+       
+        <h3 class="text-muted">Personalized Nerdy Jokes</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h2 style="font-weight: bold" id="joke" class="lead"></h2>
+        <p><a class="btn btn-lg btn-primary" href="" onClick="history.go(0)" role="button">Refresh</a> </p>
+        <br /> 
+        <p><div class="fb-share-button" data-href="http://nerdyjoke.co.uk/" data-layout="button"></div> <b id="shareText"></b></p>
+        <p>
+      </div>
+      <br />
+      
+     
+      <footer class="footer">
+          <p>The site uses the <a href="http://www.icndb.com/api/">Internet Chuck Noriss Database</a> and it is created by <a href="https://www.linkedin.com/in/adriana-cosma-0a34a228">Adriana Cosma</a>.</p>
+      </footer>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
